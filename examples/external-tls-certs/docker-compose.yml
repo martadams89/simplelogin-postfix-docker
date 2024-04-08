@@ -30,7 +30,7 @@ services:
     volumes:
       - certs:/mnt/certs
       - postfix-data:/etc/postfix/custom-data
-  
+
   sut:
     container_name: simplelogin-sut
     image: alpine:latest
