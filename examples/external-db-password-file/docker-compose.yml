@@ -13,7 +13,7 @@ services:
       DB_HOST: localhost
       DB_USER: myuser
       # DB_PASSWORD: mypassword
-      DB_PASSWORD_FILE: '/run/secrets/db_password'
+      DB_PASSWORD_FILE: "/run/secrets/db_password"
       DB_NAME: simplelogin
       LETSENCRYPT_EMAIL: support@mydomain.com
       EMAIL_HANDLER_HOST: 127.0.0.1
@@ -23,7 +23,7 @@ services:
       SIMPLELOGIN_COMPATIBILITY_MODE: v4
     secrets:
       - db_password
-  
+
   sut:
     image: alpine:latest
     container_name: simplelogin-sut
